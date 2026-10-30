@@ -1,9 +1,14 @@
-#include <algorithm>
+// Задача: Максимум из пяти чисел
+// Практика code review (2 курс)
+// На что смотреть: дублирование сравнений; плохие имена; нет проверки ввода
+// Файл: 02_max_of_five.cpp
+
 #include <iostream>
+using namespace std;
 
 int main()
-{
-    long long first = 0;
+
+long long first = 0;
     long long last = 0;
 
     if (!(std::cin >> first >> last))
