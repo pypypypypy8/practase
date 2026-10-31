@@ -1,7 +1,3 @@
-// Задача: Максимум из пяти чисел
-// Практика code review (2 курс)
-// На что смотреть: дублирование сравнений; плохие имена; нет проверки ввода
-// Файл: 02_max_of_five.cpp
 
 #include <iostream>
 using namespace std;
@@ -11,15 +7,15 @@ int main()
 long long first = 0;
     long long last = 0;
 
-    if (!(std::cin >> first >> last))
+    if (!(cin >> first >> last))
     {
-        std::cerr << "Error: expected two integers\n";
+        cerr << "Error: expected two integers\n";
         return 1;
     }
 
     if (first > last)
     {
-        std::swap(first, last);
+        swap(first, last);
     }
 
     long long sum = 0;
@@ -28,6 +24,6 @@ long long first = 0;
         sum += i;
     }
 
-    std::cout << "sum=" << sum << '\n';
+   cout << "sum=" << sum << '\n';
     return 0;
 }

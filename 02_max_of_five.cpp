@@ -12,9 +12,9 @@ int maxValue = 0;
 for (int i = 0; i < kCount; ++i)
 {
     int value = 0;
-    if (!(std::cin >> value))
+    if (!(cin >> value))
     {
-        std::cerr << "Error: expected " << kCount << " integers\n";
+        cerr << "Error: expected " << kCount << " integers\n";
         return 1;
     }
     if (i == 0 || value > maxValue)
